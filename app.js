@@ -6,8 +6,9 @@ const app = express();
 const publicPath = path.resolve(__dirname, './public')
 app.use(express.static(publicPath));
 
+const port = process.env.PORT || 3030;
 
-app.listen(3030, () => console.log("Servidor funcionando"));
+app.listen(port, () => console.log(`Servidor corriendo en Puerto ${port}`));
 
 app.get('/', (req,res) => {
     res.sendFile(path.resolve(__dirname, "./views/home.html"))
