@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+}
+
+.barraBusqueda,
+.logo {
+    box-sizing: border-box;
+}
+
+.logoYBarraBusqueda ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logoYBarraBusqueda li {
+    list-style: none;
+    width: 50%;
+}
+
+.headerBottom {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+.titulares {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precios {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    width: 30%;
+}
+
+.descuentos {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #39b54a;
+    width: 70%;
+}
+
+.precio-descuento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descripciones {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menuHamburguesa {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    border-radius: 15%;
+    text-align: center;
+    align-content: center;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    display: flex;
+}
+
+.mainNav-bar a {
+    text-decoration: none;
+    color: black
+}
+
+.siteNavBar {
+    color: black
+}
+
+.loginNavBar {
+    color: black
+}
+
+.footerIconos {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+    text-align: center;
+
+}
+
+.footerTextoCentrado {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    display: flex;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.textoEnHeader {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+}
+
+.lupita {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2px;
+    border: 1px solid #333;
+}
+
+main {
+    place-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+main article {
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.borderArticle {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+}
+
+.borderArticle img {
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+
+div.contenedorArticulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .logoYBarraBusqueda li {
+        width: 25%;
+    }
+    .borderArticle {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .menuHamburguesa {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .descripciones {
+        display: none;
+    }
+
+    .loginNavBar {
+        display: none;
+    }
+
+    .siteNavBar {
+        display: none;
+    }
+
+    .contenedorArticulos {
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+    .logoYBarraBusqueda li {
+        width: 50%;
+    }
+
+    .borderArticle {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .menuHamburguesa {
+        display: none;
+    }
+
+    .siteNavBar,
+    .loginNavBar {
+        display: none;
+    }
+
+    .contenedorArticulos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+
+
+.circuloTruck>.truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.truck {
+    color: rgb(0, 179, 0);
+}
+
+.circuloTruck {
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+}
